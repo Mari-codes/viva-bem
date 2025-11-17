@@ -51,8 +51,8 @@
 
     &__icon {
         width: 105px;
-        height: 105px;       // ajustado como você pediu
-        object-fit: cover;   // evita distorção
+        height: 105px;   
+        object-fit: cover;   
     }
 
     &__card-title {
@@ -72,5 +72,17 @@
         font-size: 14px;
         line-height: 20px;
         text-align: start;
+    }
+}
+
+@media (max-width: 767px){
+    .male{
+        &__title{
+            font-size: 32px;
+        }
+
+        &__cards{
+            flex-direction: column;
+        }
     }
 }
