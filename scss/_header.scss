@@ -59,11 +59,9 @@
             width: 100%;
 
             .banner__title {
-                background: linear-gradient(
-                    to right,
-                    map-get($alerts-title-gradient, start) 0%,
-                    map-get($alerts-title-gradient, end) 100%
-                );
+                background: linear-gradient(to right,
+                        map-get($alerts-title-gradient, start) 0%,
+                        map-get($alerts-title-gradient, end) 100%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
@@ -136,10 +134,27 @@
         &__logo img {
             width: 90px;
             height: auto;
+
+        }
+
+        .banner__button {
+            &--primary {
+                padding: 0 20px;
+                min-width: 149px;
+                width: auto;
+                white-space: nowrap;
+            }
+
+            &--secondary {
+                min-width: 107px;
+                width: auto;
+                white-space: nowrap;
+            }
         }
 
         .banner__title,
-        .banner__subtitle {
+        .banner__subtitle,
+        .banner__button {
             font-size: $font-size-xxs;
         }
 

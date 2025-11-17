@@ -125,8 +125,20 @@
     width: 90px;
     height: auto;
   }
+  .header .banner__button--primary {
+    padding: 0 20px;
+    min-width: 149px;
+    width: auto;
+    white-space: nowrap;
+  }
+  .header .banner__button--secondary {
+    min-width: 107px;
+    width: auto;
+    white-space: nowrap;
+  }
   .header .banner__title,
-  .header .banner__subtitle {
+  .header .banner__subtitle,
+  .header .banner__button {
     font-size: 14px;
   }
   .header__nav-link {
