@@ -3,20 +3,20 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url("../images/banner-header.png");
+    background-image: url($img-header-banner);
     background-size: contain;
     background-repeat: no-repeat;
 
     &__wrap {
         width: 100%;
         max-width: 1200px;
-        margin-top: 63px;
+        margin-top: $space-header-top;
         height: 57px;
-        border-radius: 50px;
+        border-radius: $radius-lg;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: linear-gradient(to right, #4247a2 0%, #52b095 100%);
+        background: linear-gradient(to right, $header-bg-start 0%, $header-bg-end 100%);
         padding: 0 57px;
     }
 
@@ -29,22 +29,21 @@
         &-list {
             display: flex;
             list-style: none;
-            gap: 37px;
+            gap: $space-xxl;
             align-items: center;
         }
 
         &-link {
-            font-family: "Roboto", sans-serif;
-            color: white;
-            font-family: "Roboto", sans-serif;
-            font-weight: 400;
-            font-size: 20px;
+            font-family: $font-body;
+            color: $white;
+            font-weight: $font-weight-regular;
+            font-size: $font-size-md;
             text-decoration: none;
         }
     }
 
     &__banner {
-        font-family: "Inter", sans-serif;
+        font-family: $font-primary;
         width: 72%;
         height: 100%;
         display: flex;
@@ -60,53 +59,57 @@
             width: 100%;
 
             .banner__title {
-                background: linear-gradient(to right, #1173D4 0%, #33CC73 100%);
+                background: linear-gradient(
+                    to right,
+                    map-get($alerts-title-gradient, start) 0%,
+                    map-get($alerts-title-gradient, end) 100%
+                );
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
                 color: transparent;
-                font-weight: 700;
-                font-size: 45px;
-                margin-bottom: 20px;
+                font-weight: $font-weight-bold;
+                font-size: $font-size-xxl;
+                margin-bottom: $space-md;
             }
 
             .banner__subtitle {
-                font-size: 26px;
-                color: #04031C;
-                font-weight: 400;
-                margin-bottom: 20px;
+                font-size: $font-size-lg;
+                color: $black;
+                font-weight: $font-weight-regular;
+                margin-bottom: $space-md;
             }
 
             .banner__buttons {
                 width: 100%;
-                padding-top: 48px;
+                padding-top: $space-banner;
                 display: flex;
-                gap: 20px;
+                gap: $space-md;
 
                 .banner__button {
-                    padding: 10px 20px;
-                    border-radius: 10px;
+                    padding: $space-sm $space-md;
+                    border-radius: $radius-sm;
                     text-decoration: none;
-                    font-weight: 500;
-                    height: 44px;
+                    font-weight: $font-weight-medium;
+                    height: $height-btn;
                     display: flex;
                     justify-content: center;
                     align-items: center;
 
                     &--primary {
-                        background-color: #1173D4;
-                        color: white;
+                        background-color: $primary-btn;
+                        color: $white;
                         width: 257px;
 
                         &:hover {
-                            background-color: darken(#1173D4, 10%);
+                            background-color: darken($primary-btn, 10%);
                         }
                     }
 
                     &--secondary {
-                        color: #1173D4;
+                        color: $primary-btn;
                         background-color: transparent;
-                        border: 1px solid #1173D4;
+                        border: 1px solid $primary-btn;
                         width: 162px;
 
                         &:hover {
@@ -119,15 +122,15 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-mobile) {
     .header {
         background-image: none;
-        padding: 20px;
+        padding: $space-md;
 
         &__wrap {
             width: 100%;
             max-width: none;
-            padding: 20px;
+            padding: $space-md;
         }
 
         &__logo img {
@@ -137,16 +140,15 @@
 
         .banner__content {
             text-align: center;
-
         }
 
         .banner__title,
         .banner__subtitle {
-            font-size: 14px;
+            font-size: $font-size-xxs;
         }
 
         &__nav-link {
-            font-size: 14px;
+            font-size: $font-size-xxs;
 
             &.masculina::after {
                 content: "Prevenção Mas";
@@ -160,8 +162,6 @@
             &.feminina span {
                 display: none;
             }
-
         }
-
     }
 }

@@ -1,16 +1,16 @@
 .footer {
-    background-color: #313461;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
+    background-color: $footer-bg;
+    color: $footer-text;
+    font-family: $font-secondary;
 
     &__top {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 40px 20px;
+        padding: $space-section 20px;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        gap: 40px;
+        gap: $space-section;
         flex-wrap: wrap;
     }
 
@@ -19,43 +19,43 @@
         max-width: 290px;
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: $space-sm;
     }
 
     &__logo {
         width: 165px;
-        margin-bottom: 15px;
+        margin-bottom: $space-sm;
     }
 
     &__phrase {
-        font-size: 16px;
+        font-size: $font-size-xs;
         line-height: 20px;
-        font-weight: 700;
+        font-weight: $font-weight-bold;
 
         &+& {
-            margin-top: 10px;
+            margin-top: $space-sm;
         }
 
         &--main {
-            font-weight: 700;
-            color: #fff;
+            font-weight: $font-weight-bold;
+            color: $white;
         }
 
         &--sub {
-            font-weight: 400;
-            color: #fefefe;
+            font-weight: $font-weight-regular;
+            color: $footer-text;
         }
     }
 
     &__title {
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 6px;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-bold;
+        margin-bottom: $space-xs;
     }
 
     &__link {
-        font-size: 16px;
-        color: #fefefe;
+        font-size: $font-size-xs;
+        color: $footer-text;
         text-decoration: none;
 
         &:hover {
@@ -64,34 +64,34 @@
     }
 
     &__text {
-        font-size: 14px;
-        color: #fff;
+        font-size: $font-size-xxs;
+        color: $footer-text;
         line-height: 20px;
 
         &--last {
-            margin-top: 29px;
+            margin-top: $space-xl;
         }
     }
 
     &__divider {
         width: 100%;
         height: 1px;
-        background-color: #9fabbc;
+        background-color: $footer-divider;
     }
 
     &__bottom {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 40px 20px;
+        padding: $space-section 20px;
         text-align: center;
-        font-size: 16px;
-        font-weight: 400;
-        color: #fff;
+        font-size: $font-size-xs;
+        font-weight: $font-weight-regular;
+        color: $footer-text;
         line-height: 20px;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-mobile) {
     .footer {
         &__top {
             flex-direction: column;

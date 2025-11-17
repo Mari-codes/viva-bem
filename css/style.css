@@ -40,8 +40,7 @@
 }
 .header__nav-link {
   font-family: "Roboto", sans-serif;
-  color: white;
-  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
   font-weight: 400;
   font-size: 20px;
   text-decoration: none;
@@ -74,7 +73,7 @@
 }
 .header__banner .banner__content .banner__subtitle {
   font-size: 26px;
-  color: #04031C;
+  color: #000000;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -96,7 +95,7 @@
 }
 .header__banner .banner__content .banner__buttons .banner__button--primary {
   background-color: #1173D4;
-  color: white;
+  color: #FFFFFF;
   width: 257px;
 }
 .header__banner .banner__content .banner__buttons .banner__button--primary:hover {
@@ -151,7 +150,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 47px;
+  padding-top: 20px;
   padding-bottom: 63px;
   display: flex;
   flex-direction: column;
@@ -172,11 +171,11 @@
 .exams__text {
   width: 100%;
   max-width: 950px;
-  margin-bottom: 26px;
+  margin-bottom: 29px;
   font-size: 20px;
   font-weight: 400;
   text-align: center;
-  color: #04031C;
+  color: #000000;
 }
 .exams__cards {
   display: flex;
@@ -187,25 +186,25 @@
 .exams__card {
   width: 100%;
   max-width: 282px;
-  padding: 15px 18px;
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   border-radius: 10px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .exams__card:hover {
   transform: translateY(-8px);
-  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3137254902);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.31);
 }
 .exams__icon {
   width: 48px;
   height: 48px;
 }
 .exams__card-title {
-  padding: 30px 0 14px 0;
+  padding: 25px 0 10px 0;
   font-size: 20px;
   font-weight: 600;
   text-align: center;
@@ -221,7 +220,7 @@
   }
   .exams__text {
     font-size: 20px;
-    padding: 0 15px;
+    padding: 0 20px;
   }
   .exams__cards {
     flex-direction: column;
@@ -245,8 +244,8 @@
   font-weight: 700;
   font-family: "Inter", sans-serif;
   text-align: center;
-  margin: 20px 0 54px 0;
-  background: linear-gradient(90deg, rgba(249, 1, 111, 0.54) 0%, rgba(147, 8, 133, 0.619615) 41.83%, rgba(208, 56, 170, 0.754793) 70.19%, #851c87 100%);
+  margin: 6px 0 54px 0;
+  background: linear-gradient(90deg, rgba(249, 1, 111, 0.54) 0%, rgba(147, 8, 133, 0.62) 41.83%, rgba(208, 56, 170, 0.75) 70.19%, #851c87 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -269,14 +268,14 @@
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2509803922);
-  background-color: #FEFEFE;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  background-color: #FFFFFF;
 }
 .female__card-title {
   font-size: 20px;
   font-weight: 600;
   text-align: center;
-  margin: 20px 0 15px 0;
+  margin: 20px 0 10px 0;
 }
 .female__list {
   display: flex;
@@ -340,8 +339,8 @@
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2509803922);
-  background-color: #FEFEFE;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  background-color: #FFFFFF;
 }
 .male__icon {
   width: 105px;
@@ -349,7 +348,7 @@
   object-fit: cover;
 }
 .male__card-title {
-  margin: 20px 0 15px 0;
+  margin: 20px 0 10px 0;
   font-size: 20px;
   font-weight: 600;
   text-align: center;
@@ -403,16 +402,16 @@
   flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .alerts__card {
   width: 100%;
   min-height: 141px;
   max-width: 416px;
-  padding: 10px 24px;
+  padding: 10px 25px;
   border-radius: 10px;
-  background-color: #FFF;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1254901961);
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
@@ -447,7 +446,7 @@
 .alerts__card-header {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
   margin-bottom: 6px;
 }
 .alerts__card-title {
@@ -468,7 +467,7 @@
 }
 .footer {
   background-color: #313461;
-  color: #fff;
+  color: #FFFFFF;
   font-family: "Poppins", sans-serif;
 }
 .footer__top {
@@ -486,11 +485,11 @@
   max-width: 290px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 .footer__logo {
   width: 165px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .footer__phrase {
   font-size: 16px;
@@ -502,11 +501,11 @@
 }
 .footer__phrase--main {
   font-weight: 700;
-  color: #fff;
+  color: #FFFFFF;
 }
 .footer__phrase--sub {
   font-weight: 400;
-  color: #fefefe;
+  color: #FFFFFF;
 }
 .footer__title {
   font-size: 18px;
@@ -515,7 +514,7 @@
 }
 .footer__link {
   font-size: 16px;
-  color: #fefefe;
+  color: #FFFFFF;
   text-decoration: none;
 }
 .footer__link:hover {
@@ -523,7 +522,7 @@
 }
 .footer__text {
   font-size: 14px;
-  color: #fff;
+  color: #FFFFFF;
   line-height: 20px;
 }
 .footer__text--last {
@@ -532,7 +531,7 @@
 .footer__divider {
   width: 100%;
   height: 1px;
-  background-color: #9fabbc;
+  background-color: #9FABBC;
 }
 .footer__bottom {
   max-width: 1200px;
@@ -541,7 +540,7 @@
   text-align: center;
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: #FFFFFF;
   line-height: 20px;
 }
 

@@ -1,0 +1,90 @@
+$white: #FFFFFF;
+$black: #000000;
+
+$header-bg-start: #4247a2;
+$header-bg-end: #52b095;
+$primary-btn: #1173D4;
+
+
+$bg-female: #FDEFEF;
+$bg-male: #F8F9FA;
+
+$female-title-gradient: (
+  start: rgba(249, 1, 111, 0.54),
+  mid1: rgba(147, 8, 133, 0.62),
+  mid2: rgba(208, 56, 170, 0.75),
+  end: #851c87
+);
+
+$male-title-gradient: (
+  start: #3373D2,
+  mid1: #6F95C7,
+  mid2: #7BB5F5,
+  mid3: #0074EE,
+  end: #5EA7EF
+);
+
+$alerts-title-gradient: (
+  start: #1173D4,
+  end: #33CC73
+);
+
+$card-shadow: rgba(0, 0, 0, 0.25);
+
+$alert-bg: (
+  pink: #F9D5E5,
+  blue: #CFE2F3,
+  green: #D4EDDA,
+  orange: #FFE9C2
+);
+
+$alert-text: (
+  pink: #AD346A,
+  blue: #2769A3,
+  green: #244A2D,
+  orange: #976C00
+);
+
+$footer-bg: #313461;
+$footer-text: $white;
+$footer-divider: #9FABBC;
+
+$font-primary: 'Inter', sans-serif;
+$font-secondary: 'Poppins', sans-serif;
+$font-body: 'Roboto', sans-serif;
+
+$font-size-xxl: 45px; 
+$font-size-xl: 40px; 
+$font-size-lg: 26px; 
+$font-size-md: 20px; 
+$font-size-sm: 18px; 
+$font-size-xs: 16px; 
+$font-size-xxs: 14px; 
+$font-size-title-mobile: 32px;
+$font-size-alert-mobile: 24px;
+
+$font-weight-regular: 400; 
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$space-xs: 6px;
+$space-sm: 10px;
+$space-md: 20px;
+$space-lg: 25px;
+$space-xl: 29px;
+$space-xxl: 37px;
+$space-section: 40px;
+$space-banner: 48px;
+$space-header-top: 63px;
+$space-section-title: 54px;
+
+$radius-sm: 10px;
+$radius-lg: 50px;
+
+$height-btn: 44px;
+
+$breakpoint-mobile: 767px;
+
+$img-logo: "../images/logo-viva-bem.png";
+$img-header-banner: "../images/banner-header.png";

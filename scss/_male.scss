@@ -1,26 +1,35 @@
 .male {
-    background-color: #F8F9FA;
+    background-color: $bg-male;
 
     &__content {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 40px 0;
+        padding: $space-section 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 20px;
+        gap: $space-md;
     }
 
     &__title {
-        margin: 20px 0 54px 0;
-        font-family: 'Inter', sans-serif;
-        font-size: 45px;
-        font-weight: 700;
+        margin: $space-md 0 $space-section-title 0;
+        font-family: $font-primary;
+        font-size: $font-size-xxl;
+        font-weight: $font-weight-bold;
         text-align: center;
 
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-        linear-gradient(90deg, #3373D2 16.04%, #6F95C7 33.14%, #7BB5F5 54.51%, #0074EE 68.5%, #5EA7EF 87.02%);
+        background: linear-gradient(
+            0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(
+            90deg,
+            map-get($male-title-gradient, start) 16.04%,
+            map-get($male-title-gradient, mid1) 33.14%,
+            map-get($male-title-gradient, mid2) 54.51%,
+            map-get($male-title-gradient, mid3) 68.5%,
+            map-get($male-title-gradient, end) 87.02%
+        );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -31,54 +40,54 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 40px;
-        font-family: 'Roboto', sans-serif;
+        gap: $space-section;
+        font-family: $font-body;
     }
 
     &__card {
         width: 100%;
         max-width: 280px;
         min-height: 400px;
-        padding: 20px 25px;
+        padding: $space-md $space-lg;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        border-radius: 10px;
-        box-shadow: 0 4px 20px #00000040;
-        background-color: #FEFEFE;
+        border-radius: $radius-sm;
+        box-shadow: 0 4px 20px $card-shadow;
+        background-color: $white;
     }
 
     &__icon {
         width: 105px;
-        height: 105px;   
-        object-fit: cover;   
+        height: 105px;
+        object-fit: cover;
     }
 
     &__card-title {
-        margin: 20px 0 15px 0;
-        font-size: 20px;
-        font-weight: 600;
+        margin: $space-md 0 $space-sm 0;
+        font-size: $font-size-md;
+        font-weight: $font-weight-semibold;
         text-align: center;
     }
 
     &__list {
         display: flex;
         flex-direction: column;
-        gap: 6px;
+        gap: $space-xs;
         margin: 0;
         padding: 0;
-        font-family: 'Roboto', sans-serif;
-        font-size: 14px;
+        font-family: $font-body;
+        font-size: $font-size-xxs;
         line-height: 20px;
         text-align: start;
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: $breakpoint-mobile){
     .male{
         &__title{
-            font-size: 32px;
+            font-size: $font-size-title-mobile;
         }
 
         &__cards{
