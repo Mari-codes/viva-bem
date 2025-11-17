@@ -115,6 +115,8 @@
   .header {
     background-image: none;
     padding: 20px;
+    min-height: 600px;
+    height: auto;
   }
   .header__wrap {
     margin-top: 0;
@@ -125,6 +127,10 @@
   .header__logo img {
     width: 90px;
     height: auto;
+  }
+  .header .banner__content {
+    text-align: center;
+    padding-top: 63px;
   }
   .header .banner__button--primary {
     padding: 0 20px;
@@ -168,6 +174,7 @@
   align-items: center;
   text-align: center;
   gap: 20px;
+  background-color: #F8F9FA;
 }
 .exams__title {
   font-size: 45px;
