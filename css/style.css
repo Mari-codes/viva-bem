@@ -117,6 +117,7 @@
     padding: 20px;
   }
   .header__wrap {
+    margin-top: 0;
     width: 100%;
     max-width: none;
     padding: 20px;
