@@ -132,6 +132,8 @@
             width: 100%;
             max-width: none;
             padding: $space-md;
+            box-shadow: $shadow-header;
+
         }
 
         &__logo img {
@@ -140,7 +142,7 @@
 
         }
 
-        .banner__content{
+        .banner__content {
             text-align: center;
             padding-top: $space-header-top;
         }
