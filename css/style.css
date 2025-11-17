@@ -341,9 +341,9 @@
 }
 .alerts__card {
   width: 100%;
-  max-height: 141px;
+  min-height: 141px;
   max-width: 416px;
-  padding: 10px 24px 20px;
+  padding: 10px 24px;
   border-radius: 10px;
   background-color: #FFF;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1254901961);
@@ -382,7 +382,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 17px;
+  margin-bottom: 6px;
 }
 .alerts__card-title {
   font-size: 20px;
