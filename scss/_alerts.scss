@@ -110,5 +110,8 @@
         &__title {
             font-size: $font-size-alert-mobile;
         }
+        &__card {
+            margin: 0 $space-md;
+        }
     }
 }

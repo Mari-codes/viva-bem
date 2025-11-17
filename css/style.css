@@ -473,6 +473,9 @@
   .alerts__title {
     font-size: 24px;
   }
+  .alerts__card {
+    margin: 0 20px;
+  }
 }
 .footer {
   background-color: #313461;
