@@ -125,9 +125,6 @@
     width: 90px;
     height: auto;
   }
-  .header .banner__content {
-    text-align: center;
-  }
   .header .banner__title,
   .header .banner__subtitle {
     font-size: 14px;
