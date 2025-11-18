@@ -1,19 +1,19 @@
 # Viva Bem – Preventive Health Page
 
-Implementation of the **Viva Bem** webpage based on the Figma design provided in the challenge.  
-The project reproduces the layout using **Flexbox**, responsive SCSS, and a clean component-based structure.
+The **Viva Bem** page implements the Figma layout from Vai Na Web using a modular Sass architecture, BEM naming, and Flexbox-based layout rules. The codebase focuses on predictable class structure, low specificity, and scoped components
 
 ---
 
 ## 📌 About the Project
 The page presents preventive health information for men and women.  
-It includes a banner, exam sections, alert cards, and a footer – all coded from the Figma file.
+It includes a banner, exam sections, alert cards, and a footer. All coded from the Figma file.
 
 ---
 
 ## 🔧 Tech Stack
 - **HTML5**
 - **SCSS**
+- **Bem Methodology**
 - **Flexbox**
 - **Google Fonts** (Inter, Poppins, Roboto)
 
@@ -21,19 +21,16 @@ No frameworks, no Grid, no position, no plugins.
 
 ---
 
-## 🗂️ SCSS Structure
-```text
-scss/
-│
-├─ _variables.scss
-├─ _header.scss
-├─ _exams.scss
-├─ _female.scss
-├─ _male.scss
-├─ _alerts.scss
-├─ _footer.scss
-└─ style.scss
-```
+## 🖼️ Screenshots 
+<h3 align="center">Mobile</h3>
+<p align="center">
+  <img src="images/screenshots/mobile.png" width="250" />
+</p>
+
+<h3 align="center">Laptop</h3>
+<p align="center">
+  <img src="images/screenshots/laptop.png" width="" />
+</p>
 ---
 
 ## ▶️ How to Run
