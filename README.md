@@ -41,9 +41,3 @@ No frameworks, no Grid, no position, no plugins.
 
    ```bash
    sass --watch scss:css
-
----
-
-## 📌 Notes
-
-- Design implemented directly from the **Figma file provided in the challenge**.
