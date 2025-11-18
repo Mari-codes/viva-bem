@@ -1,4 +1,6 @@
 .exams {
+    background-color: $bg-male ;
+
     &__content {
         font-family: $font-primary;
 
@@ -14,7 +16,6 @@
         align-items: center;
         text-align: center;
         gap: $space-md;
-        background-color: $bg-male ;
     }
 
     &__title {

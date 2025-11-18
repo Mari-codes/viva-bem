@@ -162,6 +162,9 @@
     display: none;
   }
 }
+.exams {
+  background-color: #F8F9FA;
+}
 .exams__content {
   font-family: "Inter", sans-serif;
   width: 100%;
@@ -175,7 +178,6 @@
   align-items: center;
   text-align: center;
   gap: 20px;
-  background-color: #F8F9FA;
 }
 .exams__title {
   font-size: 45px;
